@@ -1,6 +1,6 @@
 "use client";
-import TodoList from "@/components/singleton/TodoList";
-import todoInstance from "@/store/singleton/Todos";
+import TodoList from "@/components/factory/TodoList";
+import todoInstance from "@/store/factory/Todos";
 import { useState } from "react";
 
 export default function Page() {

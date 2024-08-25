@@ -7,10 +7,13 @@ const TodoList = ({ store, todos, setTodos }) => {
           todos.map((todo, index) => (
             <li
               key={index}
-              className="rounded-sm text-sm, w-full, bg-slate-200 p-2 ring-0 ring-gray-800 mb-2"
-              onClick={() => {}}
+              className="rounded-sm text-sm, w-full, bg-slate-200 p-2 ring-0 ring-gray-800 mb-2 cursor-pointer"
+              onClick={() => {
+                todo.deleteSelf();
+                setTodos([...store.getTodos()]);
+              }}
             >
-              {todo}
+              {todo.text}
             </li>
           ))}
       </ul>
