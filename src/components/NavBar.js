@@ -18,6 +18,9 @@ const NavBar = () => {
       <Link href="/factory" className={linkClasses}>
         Factory
       </Link>
+      <Link href="/prototype" className={linkClasses}>
+        Prototype
+      </Link>
     </div>
   );
 };
