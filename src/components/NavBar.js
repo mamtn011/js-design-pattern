@@ -3,9 +3,9 @@ import React from "react";
 
 const NavBar = () => {
   const linkClasses =
-    "px-1 border border-gray-500 rounded-sm hover:text-blue-400 hover:border-blue-600";
+    "px-1 border border-gray-500 rounded-sm hover:text-blue-700 hover:border-blue-700";
   return (
-    <div className="flex gap-2 justify-center flex-wrap h-32 items-center mt-8">
+    <div className="flex gap-2 justify-center flex-wrap h-20 items-center  bg-blue-300 shadow-lg">
       <Link
         href="/"
         className={`${linkClasses} bg-black text-white  px-4 py-1`}
@@ -20,6 +20,9 @@ const NavBar = () => {
       </Link>
       <Link href="/prototype" className={linkClasses}>
         Prototype
+      </Link>
+      <Link href="/observer" className={linkClasses}>
+        Observer
       </Link>
     </div>
   );
