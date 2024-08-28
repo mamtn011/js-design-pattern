@@ -24,6 +24,9 @@ const NavBar = () => {
       <Link href="/observer" className={linkClasses}>
         Observer
       </Link>
+      <Link href="/proxy" className={linkClasses}>
+        Proxy
+      </Link>
     </div>
   );
 };
